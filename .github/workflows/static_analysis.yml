@@ -25,4 +25,4 @@ jobs:
 
       - name: Run PHPStan
         working-directory: ./app
-        run: vendor/bin/phpstan analyse
+        run: vendor/bin/phpstan analyse ./src ./tests
