@@ -33,7 +33,7 @@ jobs:
 
       - name: Verify Containers are Running
         run: |
-          docker-compose ps
+          docker compose ps
           # Check if any container exited unexpectedly
           if [[ $(docker compose ps -q | xargs docker inspect -f '{{.State.Running}}' | grep false) ]]; then
             echo "One or more containers are not running!" >&2
