@@ -20,7 +20,9 @@ jobs:
           php-version: 8.3
 
       - name: Install Dependencies
-        run: composer install --prefer-dist --no-progress --no-suggest
+        working-directory: ./app
+        run: composer install --prefer-dist --no-progress
 
       - name: Run PHPStan
+        working-directory: ./app
         run: vendor/bin/phpstan analyse
