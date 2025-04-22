@@ -1,8 +1,8 @@
 # Radio amateur toolkit
 
-This app is a toolkit for radio amateurs, both for experienced and the one who are studying for a license. 
-Contains many tools useful when using radios, like for example calculators for antennas or lists of q-codes. 
-Also, there some tools for the ones who are unlicensed and are actually preparing for an exam. 
+This app is a toolkit for radio amateurs, both for experienced users and those who are studying for a license.
+It contains many tools useful for radio operations, such as antenna calculators or lists of Q-codes.
+Additionally, it includes tools for unlicensed users who are preparing for an exam.
 
 ## Table of Contents
 
@@ -15,7 +15,8 @@ Also, there some tools for the ones who are unlicensed and are actually preparin
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
+
+[//]: # (- [Contact]&#40;#contact&#41;)
 
 ## About The Project
 
@@ -25,12 +26,12 @@ This app is a must-have for every radio amateur. It contains many useful tools, 
   - Dipole
   - Yagi
   - ...
-- List of q-codes
+- List of Qrs-codes
 - Table of RST-reports
-- Polish bandplan (maybe in future also for other countries)
+- Polish band plan (and possibly for other countries in the future)
 - and many more!
 
-For the ones who are preparing for an exam:
+For those preparing for an exam:
 - List of questions from the Polish exam for radio amateurs
 - Q-codes and RST-reports learning tool
 - Exam simulator
@@ -70,7 +71,7 @@ List any prerequisites, for example:
    ```sh
    docker-compose up -d
    ```
-   Flag `-d` is used to run the containers in detached mode. If you want to see the logs, you can run without it.
+   The `-d` flag runs the containers in detached mode. To see the logs, omit the flag.
     ```sh
     docker-compose up
     ```
@@ -104,8 +105,10 @@ portions of the software.
 
 See the [LICENSE](LICENSE.md) file for details.
 
-## Contact
+[//]: # (## Contact)
 
-Your Name - [@your_twitter_handle](https://twitter.com/your_twitter_handle) - your_email@example.com
+[//]: # ()
+[//]: # (Your Name - [@your_twitter_handle]&#40;https://twitter.com/your_twitter_handle&#41; - your_email@example.com)
 
-Project Link: [https://github.com/your_username/your_repository](https://github.com/your_username/your_repository)
+[//]: # ()
+[//]: # (Project Link: [https://github.com/your_username/your_repository]&#40;https://github.com/your_username/your_repository&#41;)
