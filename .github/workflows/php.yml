@@ -1,0 +1,32 @@
+# uruchomienie testów PHP Unit
+
+name: PHP Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
+          extensions: mbstring, intl, pdo_mysql
+          coverage: none
+
+      - name: Install Dependencies
+        working-directory: ./app
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: Run Tests
+        working-directory: ./app
+        run: vendor/bin/phpunit
