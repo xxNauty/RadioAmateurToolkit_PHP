@@ -11,12 +11,9 @@ Additionally, it includes tools for unlicensed users who are preparing for an ex
 - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
-- [Usage](#usage)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
-
-[//]: # (- [Contact]&#40;#contact&#41;)
 
 ## About The Project
 
@@ -48,14 +45,9 @@ List the technologies or frameworks used in the project, for example:
 
 ## Getting Started
 
-Instructions for getting a copy of the project running on your local machine.
-
 ### Prerequisites
 
-List any prerequisites, for example:
-- PHP >= 8.3
-- Composer
-- Docker
+- Docker and Docker compose
 
 ### Installation
 
@@ -80,12 +72,9 @@ List any prerequisites, for example:
 
 ## Roadmap
 
-Outline planned features and updates:
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
+Information about the future plans for the project you can check in the [TODO.md](TODO.md) file.
 
-Check out the [open issues](https://github.com/your_username/your_repository/issues) for a full list of proposed features.
+Check out the [open issues](https://github.com/xxNauty/RadioAmateurToolkit_PHP/issues) for a full list of proposed features.
 
 ## Contributing
 
