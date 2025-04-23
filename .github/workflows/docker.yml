@@ -26,10 +26,10 @@ jobs:
       - name: Start Containers
         run: docker compose up -d
 
-#      - name: Run Health Checks
-#        run: |
-#          sleep 10
-#          curl -f http://localhost:8080 || exit 1
+      - name: Run Health Checks
+        run: |
+          sleep 10
+          curl -f http://localhost:8080 || exit 1
 
       - name: Verify Containers are Running
         run: |
