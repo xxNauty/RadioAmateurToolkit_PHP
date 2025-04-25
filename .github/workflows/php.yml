@@ -24,9 +24,7 @@ jobs:
           coverage: none
 
       - name: Install Dependencies
-        working-directory: ./app
         run: composer install --prefer-dist --no-progress --no-suggest
 
       - name: Run Tests
-        working-directory: ./app
         run: vendor/bin/phpunit
