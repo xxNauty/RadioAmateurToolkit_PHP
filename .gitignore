@@ -1,1 +1,9 @@
 mysql
+vendor
+.idea
+
+/var/cache/*
+/var/log/*
+
+
+composer.lock
