@@ -7,7 +7,7 @@ vendor
 
 
 composer.lock
-.env
+.env.local
 
 *.log
 *.tmp
