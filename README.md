@@ -59,7 +59,18 @@ List the technologies or frameworks used in the project, for example:
    ```sh
    cd your_repository
    ```
-3. Run the application using Docker compose:
+   
+3. Prepare the `.env` file:
+   1. Rename `.env.template` to `.env`.
+      ```sh
+      mv .env.template .env
+      ```
+   2. Generate value for `APP_SECRET` variable:
+      ```sh
+      php -r "echo bin2hex(random_bytes(32));"
+      ```
+   3. (Optional) Adjust the database connection details if you want to use different database system
+4. Run the application using Docker compose:
    ```sh
    docker-compose up -d
    ```
@@ -68,7 +79,7 @@ List the technologies or frameworks used in the project, for example:
     docker-compose up
     ```
 
-4. Navigate to `http://localhost:8080` in your browser and you should see the application running.
+5. Navigate to `http://localhost:8080` in your browser and you should see the application running.
 
 ## Roadmap
 
