@@ -14,7 +14,7 @@ final class Version20250502133854 extends AbstractMigration
 {
     public function getDescription(): string
     {
-        return '';
+        return 'Data for Polish phonetic alphabet.';
     }
 
     public function up(Schema $schema): void

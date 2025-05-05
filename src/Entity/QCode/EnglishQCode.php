@@ -2,11 +2,11 @@
 
 namespace App\Entity\QCode;
 
-use App\Repository\PolishQCodeRepository;
+use App\Repository\EnglishQCodeRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: PolishQCodeRepository::class)]
-class PolishQCode
+#[ORM\Entity(repositoryClass: EnglishQCodeRepository::class)]
+class EnglishQCode
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]

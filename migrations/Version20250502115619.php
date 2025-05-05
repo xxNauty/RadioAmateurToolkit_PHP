@@ -14,7 +14,7 @@ final class Version20250502115619 extends AbstractMigration
 {
     public function getDescription(): string
     {
-        return '';
+        return 'The creation of the qcode table.';
     }
 
     public function up(Schema $schema): void

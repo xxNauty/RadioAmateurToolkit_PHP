@@ -10,18 +10,18 @@ use Doctrine\Migrations\AbstractMigration;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-final class Version20250502130210 extends AbstractMigration
+final class Version20250505130223 extends AbstractMigration
 {
     public function getDescription(): string
     {
-        return 'Table for Polish phonetic alphabet.';
+        return 'Table for English version of q-code';
     }
 
     public function up(Schema $schema): void
     {
         // this up() migration is auto-generated, please modify it to your needs
         $this->addSql(<<<'SQL'
-            CREATE TABLE polish_phonetic_letter (id INT AUTO_INCREMENT NOT NULL, letter VARCHAR(1) NOT NULL, code_word VARCHAR(14) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
+            CREATE TABLE english_qcode (id INT AUTO_INCREMENT NOT NULL, code VARCHAR(4) NOT NULL, description VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
         SQL);
     }
 
@@ -29,7 +29,7 @@ final class Version20250502130210 extends AbstractMigration
     {
         // this down() migration is auto-generated, please modify it to your needs
         $this->addSql(<<<'SQL'
-            DROP TABLE polish_phonetic_letter
+            DROP TABLE english_qcode
         SQL);
     }
 }

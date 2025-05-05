@@ -14,7 +14,7 @@ final class Version20250502122736 extends AbstractMigration
 {
     public function getDescription(): string
     {
-        return '';
+        return 'The creation of table for NATO phonetic alphabet.';
     }
 
     public function up(Schema $schema): void
