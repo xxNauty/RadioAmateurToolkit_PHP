@@ -1,0 +1,8 @@
+<?php
+
+namespace App\Entity\RSTReports\Interfaces;
+
+interface ReadablilityInterface
+{
+
+}

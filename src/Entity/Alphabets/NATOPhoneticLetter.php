@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Entity;
+namespace App\Entity\Alphabets;
 
-use App\Repository\PolishPhoneticLetterRepository;
+use App\Repository\NATOPhoneticLetterRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: PolishPhoneticLetterRepository::class)]
-class PolishPhoneticLetter
+#[ORM\Entity(repositoryClass: NATOPhoneticLetterRepository::class)]
+#[ORM\Table(name: 'nato_phonetic_letter')]
+class NATOPhoneticLetter
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -16,7 +17,7 @@ class PolishPhoneticLetter
     #[ORM\Column(length: 1)]
     private ?string $letter = null;
 
-    #[ORM\Column(length: 14)]
+    #[ORM\Column(length: 10)]
     private ?string $codeWord = null;
 
     public function getId(): ?int

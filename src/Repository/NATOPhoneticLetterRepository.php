@@ -2,7 +2,7 @@
 
 namespace App\Repository;
 
-use App\Entity\NATOPhoneticLetter;
+use App\Entity\Alphabets\NATOPhoneticLetter;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 

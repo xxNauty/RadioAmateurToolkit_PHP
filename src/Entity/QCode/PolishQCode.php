@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Entity;
+namespace App\Entity\QCode;
 
 use App\Repository\QCodeRepository;
 use Doctrine\ORM\Mapping as ORM;
 
+
 #[ORM\Entity(repositoryClass: QCodeRepository::class)]
-class QCode
+class PolishQCode
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
