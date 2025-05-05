@@ -2,10 +2,10 @@
 
 namespace App\Entity\QCode;
 
-use App\Repository\QCodeRepository;
+use App\Repository\PolishQCodeRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: QCodeRepository::class)]
+#[ORM\Entity(repositoryClass: PolishQCodeRepository::class)]
 class PolishQCode
 {
     #[ORM\Id]
