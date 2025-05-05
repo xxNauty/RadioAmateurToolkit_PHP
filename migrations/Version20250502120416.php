@@ -14,7 +14,7 @@ final class Version20250502120416 extends AbstractMigration
 {
     public function getDescription(): string
     {
-        return '';
+        return 'List of polish q-codes.';
     }
 
     public function up(Schema $schema): void
@@ -104,7 +104,7 @@ final class Version20250502120416 extends AbstractMigration
     {
         // this down() migration is auto-generated, please modify it to your needs
         $this->addSql(<<<'SQL'
-            DELETE FROM qcode WHERE id BETWEEN 1 AND 75
+            DELETE FROM english_qcode WHERE id BETWEEN 1 AND 75
         SQL);
     }
 }

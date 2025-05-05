@@ -14,7 +14,7 @@ final class Version20250505124040 extends AbstractMigration
 {
     public function getDescription(): string
     {
-        return '';
+        return 'Rename of the qcode table to polish_qcode.';
     }
 
     public function up(Schema $schema): void
