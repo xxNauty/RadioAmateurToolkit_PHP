@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Entity\RST_Reports\Polish;
+namespace App\Entity\RSTReports\Polish;
 
-use App\Entity\RST_Reports\Interfaces\StrengthInterface;
+use App\Entity\RSTReports\Interfaces\StrengthInterface;
 
 enum Strength: string implements StrengthInterface
 {

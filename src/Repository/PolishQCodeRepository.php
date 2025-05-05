@@ -3,17 +3,18 @@
 namespace App\Repository;
 
 use App\Entity\QCode;
+use App\Entity\QCode\PolishQCode;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
  * @extends ServiceEntityRepository<QCode>
  */
-class QCodeRepository extends ServiceEntityRepository
+class PolishQCodeRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, QCode::class);
+        parent::__construct($registry, PolishQCode::class);
     }
 
     //    /**

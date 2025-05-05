@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Entity\RST_Reports\Polish;
+namespace App\Entity\RSTReports\Polish;
 
-use App\Entity\RST_Reports\Interfaces\ToneInterface;
+use App\Entity\RSTReports\Interfaces\ToneInterface;
 
 enum Tone: string implements ToneInterface
 {
