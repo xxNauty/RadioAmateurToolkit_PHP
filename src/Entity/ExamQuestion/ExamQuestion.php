@@ -25,10 +25,10 @@ class ExamQuestion
     #[ORM\Column(length: 255)]
     private ?string $answerC = null;
 
-    #[ORM\Column()]
+    #[ORM\Column(enumType: CorrectAnswer::class)]
     private ?CorrectAnswer $correctAnswer = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(enumType: Category::class)]
     private ?Category $category = null;
 
     public function getId(): ?int
