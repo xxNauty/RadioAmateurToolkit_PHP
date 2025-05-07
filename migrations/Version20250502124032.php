@@ -7,14 +7,14 @@ namespace DoctrineMigrations;
 use Doctrine\DBAL\Schema\Schema;
 use Doctrine\Migrations\AbstractMigration;
 
-/**
- * Auto-generated Migration: Please modify to your needs!
- */
 final class Version20250502124032 extends AbstractMigration
 {
     public function getDescription(): string
     {
-        return 'NATO phonetic alphabet.';
+        return
+            '
+                1. NATO phonetic alphabet.
+            ';
     }
 
     public function up(Schema $schema): void
@@ -46,7 +46,7 @@ final class Version20250502124032 extends AbstractMigration
             (23, "W", "Whiskey"), 
             (24, "X", "X-ray"), 
             (25, "Y", "Yankee"),
-            (26, 'Z', 'Zulu')
+            (26, "Z", "Zulu")
         SQL);
     }
 

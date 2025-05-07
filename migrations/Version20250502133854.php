@@ -7,14 +7,14 @@ namespace DoctrineMigrations;
 use Doctrine\DBAL\Schema\Schema;
 use Doctrine\Migrations\AbstractMigration;
 
-/**
- * Auto-generated Migration: Please modify to your needs!
- */
 final class Version20250502133854 extends AbstractMigration
 {
     public function getDescription(): string
     {
-        return 'Data for Polish phonetic alphabet.';
+        return
+            '
+                1. List of Polish phonetic letters with their corresponding code words.
+            ';
     }
 
     public function up(Schema $schema): void
@@ -57,7 +57,8 @@ final class Version20250502133854 extends AbstractMigration
 
     public function down(Schema $schema): void
     {
-        // this down() migration is auto-generated, please modify it to your needs
-
+        $this->addSql(<<<'SQL'
+            DELETE FROM polish_phonetic_letter WHERE id BETWEEN 1 AND 31
+        SQL);
     }
 }

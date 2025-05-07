@@ -7,19 +7,18 @@ namespace DoctrineMigrations;
 use Doctrine\DBAL\Schema\Schema;
 use Doctrine\Migrations\AbstractMigration;
 
-/**
- * Auto-generated Migration: Please modify to your needs!
- */
 final class Version20250502120416 extends AbstractMigration
 {
     public function getDescription(): string
     {
-        return 'List of polish q-codes.';
+        return
+            '
+                1. List of polish q-codes.
+            ';
     }
 
     public function up(Schema $schema): void
     {
-        // this up() migration is auto-generated, please modify it to your needs
         $this->addSql(<<<'SQL'
             INSERT INTO qcode (id, code, description) VALUES
             (1, "QAZ", "Burza, wyłączam stację"),
@@ -102,7 +101,6 @@ final class Version20250502120416 extends AbstractMigration
 
     public function down(Schema $schema): void
     {
-        // this down() migration is auto-generated, please modify it to your needs
         $this->addSql(<<<'SQL'
             DELETE FROM english_qcode WHERE id BETWEEN 1 AND 75
         SQL);
